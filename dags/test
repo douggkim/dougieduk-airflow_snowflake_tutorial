@@ -1,0 +1,8 @@
+digraph First_job {
+	graph [label=First_job labelloc=t rankdir=LR]
+	Start [color="#000000" fillcolor="#e8f7e4" label=Start shape=rectangle style="filled,rounded"]
+	call_my_name [color="#000000" fillcolor="#ffefeb" label=call_my_name shape=rectangle style="filled,rounded"]
+	sleep [color="#000000" fillcolor="#f0ede4" label=sleep shape=rectangle style="filled,rounded"]
+	Start -> call_my_name
+	call_my_name -> sleep
+}

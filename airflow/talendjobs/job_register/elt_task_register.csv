@@ -1,0 +1,6 @@
+JOB_NAME,TASK_NAME,DATABASE,SCHEMA,CONTROL_TABLE,SQL_FILE,LOAD_FLG,EXECUTE_FLG
+emp_details,elt_parse_emp_details,DEMO_DB,PUBLIC,ELT_PARSE_EMP_DETAILS,/emp_details/parse_emp_details.sql,1,1
+emp_details,elt_emp_details_scoring,DEMO_DB,PUBLIC,ELT_SCORE_EMP_DETAILS,/emp_details/emp_details_scoring.sql,1,1
+emp_details,elt_merge_emp_details,DEMO_DB,PUBLIC,ELT_MERGE_EMP_DETAILS,/emp_details/merge_emp_details.sql,1,1
+Nyc_data_processing_full_load,elt_nyc_process_data,DEMO_DB,PUBLIC,NYC_PROCESSING_SQL,/Nyc_sample_load/Nyc_processing.sql,1,1
+Nyc_data_processing_smp_load,elt_nyc_process_data,DEMO_DB,PUBLIC,NYC_PROCESSING_SQL,/Nyc_sample_load/Nyc_processing.sql,1,1

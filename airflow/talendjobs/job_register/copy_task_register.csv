@@ -1,0 +1,36 @@
+JOB_NAME,TASK_NAME,DATABASE,SCHEMA,TABLE_NAME,S3_BUCKET,STAGE_OBJECT,S3_FILE_PATH,WAREHOUSE,FILE_FORMAT,PATTERN,REJECTS_THRESHOLD,DATA_SOURCE
+emp_details,copy_emp_details_load,DEMO_DB,PUBLIC,stg_emp_details_parquet,snowflakesmpdata,MY_S3_STAGE/,parquet_folder/,DATA_LOAD,my_parquet_s3_format,.*,10,PARQUET
+emp_details,copy_emp_details_load,DEMO_DB,PUBLIC,stg_emp_details_avro,snowflakesmpdata,MY_S3_STAGE/,Avro_folder/,DATA_LOAD,my_avro_s3_format,.*,10,AVRO
+emp_details,copy_emp_details_load,DEMO_DB,PUBLIC,stg_emp_details_orc,snowflakesmpdata,MY_S3_STAGE/,orc_folder/,DATA_LOAD,my_orc_s3_format,.*,10,ORC
+emp_details,copy_emp_details_load,DEMO_DB,PUBLIC,stg_emp_details_json,snowflakesmpdata,MY_S3_STAGE/,json_folder/,DATA_LOAD,my_json_s3_format,.*,10,JSON
+emp_details,copy_emp_details_load,DEMO_DB,PUBLIC,stg_emp_details_csv,snowflakesmpdata,MY_S3_STAGE/,csv_folder/,DATA_LOAD,my_csv_s3_format,.*,10,CSV
+,,,,,,,,,,,,
+Nyc_data_processing_full_load,copy_nyc_taxi_zones_load,DEMO_DB,PUBLIC,TAXI_ZONES,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*taxi.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_weather_data_load,DEMO_DB,PUBLIC,NYC_WEATHER,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*central.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2009,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2009.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2010,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2010.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2011,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2011.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2012,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2012.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2013,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2013.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2014,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2014.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2015,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2015.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2016,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2016.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2017,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2017.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2018,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2018.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2019,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2019.*,10,YELLOW_TAXI
+Nyc_data_processing_full_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2020,nyc-tlc/trip\ data/,nyc_yellow_taxi/,,DATA_LOAD,my_csv_s3_format,.*yellow.*2020.*,10,YELLOW_TAXI
+,,,,,,,,,,,,
+Nyc_data_processing_smp_load,copy_nyc_taxi_zones_load,DEMO_DB,PUBLIC,TAXI_ZONES,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*taxi.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_weather_data_load,DEMO_DB,PUBLIC,NYC_WEATHER,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*central.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2009,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2009.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2010,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2010.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2011,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2011.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2012,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2012.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2013,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2013.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2014,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2014.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2015,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2015.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2016,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2016.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2017,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2017.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2018,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2018.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2019,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2019.*,10,YELLOW_TAXI
+Nyc_data_processing_smp_load,copy_nyc_yellow_taxi_load,DEMO_DB,PUBLIC,YELLOW_TAXI_2020,snowflakesmpdata,MY_S3_STAGE/,Nyc/,DATA_LOAD,my_csv_s3_format,.*yellow.*2020.*,10,YELLOW_TAXI

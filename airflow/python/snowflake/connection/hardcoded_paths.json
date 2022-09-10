@@ -1,0 +1,5 @@
+{
+    "parameters":"/opt/airflow/talendjobs/parameters/",
+    "jo_register": "/opt/airflow/talendjobs/job_register/"
+    
+}

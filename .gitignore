@@ -1,0 +1,10 @@
+airflow/python/snowflake/connection/snow_creds.json
+airflow/snowpythconn/creds/snow_creds.json
+airflow/talendjobs/parameters/snowflake_conn1.csv
+airflow/python/snowflake/connection/aws_creds.json
+airflow.cfg
+airflow/snow_conn.py
+airflow/snowpythconn/Sql_files/snowflake_config.cfg
+airflow/logs/**
+airflow/logs/**/*
+*.cfg

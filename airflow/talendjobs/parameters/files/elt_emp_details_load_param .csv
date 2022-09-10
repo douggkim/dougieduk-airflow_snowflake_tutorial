@@ -1,0 +1,6 @@
+DATABASE,SCHEMA,TABLE_NAME,STAGE_OBJECT,S3_FILE_PATH,WAREHOUSE,FILE_FORMAT,REJECTS_THRESHOLD
+DEMO_DB,PUBLIC,stg_emp_details_parquet,MY_S3_STAGE,/parquet_folder/,COPY_S3,my_parquet_s3_format,10
+DEMO_DB,PUBLIC,stg_emp_details_avro,MY_S3_STAGE,/Avro_folder/,COPY_S3,my_avro_s3_format,10
+DEMO_DB,PUBLIC,stg_emp_details_orc,MY_S3_STAGE,/orc_folder/,COPY_S3,my_orc_s3_format,10
+DEMO_DB,PUBLIC,stg_emp_details_json,MY_S3_STAGE,/json_folder/,COPY_S3,my_json_s3_format,10
+DEMO_DB,PUBLIC,stg_emp_details_csv,MY_S3_STAGE,/csv_folder/,COPY_S3,my_csv_s3_format,10

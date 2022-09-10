@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="connection" prompt="connection?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_tracing" prompt="mysnowflakeconn_tracing?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_schemaName" prompt="mysnowflakeconn_schemaName?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_userPassword_userId" prompt="mysnowflakeconn_userPassword_userId?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_role" prompt="mysnowflakeconn_role?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_region" prompt="mysnowflakeconn_region?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_userPassword_password" prompt="mysnowflakeconn_userPassword_password?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_Password" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_account" prompt="mysnowflakeconn_account?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_warehouse" prompt="mysnowflakeconn_warehouse?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_customRegionID" prompt="mysnowflakeconn_customRegionID?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_loginTimeout" prompt="mysnowflakeconn_loginTimeout?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_Integer" value=""/>
+    <contextParameter comment="" name="mysnowflakeconn_db" prompt="mysnowflakeconn_db?" promptNeeded="false" repositoryContextId="_0Pz4wIRNEeuBO4cuX3O_9Q" type="id_String" value=""/>
+    <contextParameter comment="" name="source_filepath" prompt="source_filepath?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/fatpartition/Talend/TOS_DI-20181026_1147-V7.1.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_hJvv8GUWEeuag_Ejhjhe8g" name="DataOperation"/>
+    <routinesParameter id="_hLA7QGUWEeuag_Ejhjhe8g" name="Mathematical"/>
+    <routinesParameter id="_hLFzwGUWEeuag_Ejhjhe8g" name="Numeric"/>
+    <routinesParameter id="_hLKsQGUWEeuag_Ejhjhe8g" name="Relational"/>
+    <routinesParameter id="_hLO9sGUWEeuag_Ejhjhe8g" name="StringHandling"/>
+    <routinesParameter id="_hLTPIGUWEeuag_Ejhjhe8g" name="TalendDataGenerator"/>
+    <routinesParameter id="_hLXgkGUWEeuag_Ejhjhe8g" name="TalendDate"/>
+    <routinesParameter id="_hLhRkGUWEeuag_Ejhjhe8g" name="TalendStringUtil"/>
+    <routinesParameter id="_hLcZEGUWEeuag_Ejhjhe8g" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_4dsuIIRQEeuBO4cuX3O_9Q - Snowconn" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.connection"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/fatpartition/Talend/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="read_param_values"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Snowconn" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="0" name="key" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="value" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="Snowconn" name="REJECT">
+      <column comment="" key="false" length="0" name="key" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="value" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Assign_context_values"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.source_filepath"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/home/pradeep/Documents/Talend2/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pin"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salary"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pin"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salary"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Read_emp"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="age" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="salary" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="age" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="salary" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_x2OrIN5fEeyJnZElJpRb6A-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="snow_out">
+      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="pin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="age" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="salary" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Etl_date" nullable="true" originalDbColumnName="etl_date" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Etl_date" expression="TalendDate.getCurrentDate() " type="id_Date"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="snow_out">
+        <mapperTableEntries name="Name" expression="row1.Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="address" expression="row1.address " type="id_String" nullable="true"/>
+        <mapperTableEntries name="city" expression="row1.city " type="id_String" nullable="true"/>
+        <mapperTableEntries name="pin" expression="row1.pin " type="id_String" nullable="true"/>
+        <mapperTableEntries name="age" expression="row1.age " type="id_String" nullable="true"/>
+        <mapperTableEntries name="salary" expression="row1.salary " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Etl_date" expression="Var.Etl_date " type="id_Date" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="city" type="id_String" nullable="true"/>
+        <mapperTableEntries name="pin" type="id_String" nullable="true"/>
+        <mapperTableEntries name="age" type="id_String" nullable="true"/>
+        <mapperTableEntries name="salary" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSnowflakeOutput" componentVersion="0.25.3" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_f5ZnoHfIEeuchpMACCyI3w" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="Load_emp"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@id&quot;:3,&quot;@type&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties&quot;,&quot;__version&quot;:3,&quot;tableAction&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:false,&quot;name&quot;:&quot;NONE&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:false,&quot;name&quot;:&quot;NONE&quot;},{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:true,&quot;name&quot;:&quot;DROP_CREATE&quot;},{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:true,&quot;name&quot;:&quot;CREATE&quot;},{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:true,&quot;name&quot;:&quot;CREATE_IF_NOT_EXISTS&quot;},{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:true,&quot;name&quot;:&quot;DROP_IF_EXISTS_AND_CREATE&quot;},{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:false,&quot;name&quot;:&quot;CLEAR&quot;},{&quot;@type&quot;:&quot;org.talend.components.common.tableaction.TableAction$TableActionEnum&quot;,&quot;create&quot;:false,&quot;name&quot;:&quot;TRUNCATE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.common.tableaction.TableAction.TableActionEnum&quot;,&quot;name&quot;:&quot;tableAction&quot;,&quot;tags&quot;:null},&quot;outputAction&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties$OutputAction&quot;,&quot;name&quot;:&quot;INSERT&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties$OutputAction&quot;,&quot;name&quot;:&quot;INSERT&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties$OutputAction&quot;,&quot;name&quot;:&quot;UPDATE&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties$OutputAction&quot;,&quot;name&quot;:&quot;UPSERT&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties$OutputAction&quot;,&quot;name&quot;:&quot;DELETE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties.OutputAction&quot;,&quot;name&quot;:&quot;outputAction&quot;,&quot;tags&quot;:null},&quot;upsertKeyColumn&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;Name&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;Name&quot;,&quot;address&quot;,&quot;city&quot;,&quot;pin&quot;,&quot;age&quot;,&quot;salary&quot;,&quot;Etl_date&quot;]},&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;upsertKeyColumn&quot;,&quot;tags&quot;:null},&quot;schemaReject&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;rejectOutput\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;columnName\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;rowNumber\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;category\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;character\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;errorMessage\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;byteOffset\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;line\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;sqlState\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;},{\&quot;name\&quot;:\&quot;code\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;false\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.field.length\&quot;:\&quot;255\&quot;}]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schemaReject&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;convertColumnsAndTableToUppercase&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;convertColumnsAndTableToUppercase&quot;,&quot;tags&quot;:null},&quot;usePersonalDBType&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;usePersonalDBType&quot;,&quot;tags&quot;:null},&quot;dbtypeTable&quot;:{&quot;column&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@id&quot;:10,&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;Name&quot;,&quot;address&quot;,&quot;city&quot;,&quot;pin&quot;,&quot;age&quot;,&quot;salary&quot;,&quot;Etl_date&quot;]},&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String>&quot;,&quot;name&quot;:&quot;column&quot;,&quot;tags&quot;:null},&quot;dbtype&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;ARRAY&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;ARRAY&quot;,&quot;BIGINT&quot;,&quot;BINARY&quot;,&quot;BOOLEAN&quot;,&quot;CHARACTER&quot;,&quot;DATE&quot;,&quot;DATETIME&quot;,&quot;DECIMAL&quot;,&quot;DOUBLE&quot;,&quot;DOUBLE_PRECISION&quot;,&quot;FLOAT&quot;,&quot;FLOAT4&quot;,&quot;FLOAT8&quot;,&quot;INTEGER&quot;,&quot;NUMBER&quot;,&quot;NUMERIC&quot;,&quot;OBJECT&quot;,&quot;REAL&quot;,&quot;SMALLINT&quot;,&quot;STRING&quot;,&quot;TEXT&quot;,&quot;TIME&quot;,&quot;TIMESTAMP&quot;,&quot;TIMESTAMP_LTZ&quot;,&quot;TIMESTAMP_NTZ&quot;,&quot;TIMESTAMP_TZ&quot;,&quot;VARBINARY&quot;,&quot;VARCHAR&quot;,&quot;VARIANT&quot;]},&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String>&quot;,&quot;name&quot;:&quot;dbtype&quot;,&quot;tags&quot;:null},&quot;columnPossibleValues&quot;:{&quot;@ref&quot;:10},&quot;name&quot;:&quot;dbtypeTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;convertEmptyStringsToNull&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;convertEmptyStringsToNull&quot;,&quot;tags&quot;:null},&quot;connection&quot;:{&quot;@id&quot;:4,&quot;__version&quot;:1,&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;loginTimeout&quot;:{&quot;@id&quot;:9,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_loginTimeout&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.loginTimeout&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;loginTimeout&quot;,&quot;tags&quot;:null},&quot;account&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_account&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.account&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;account&quot;,&quot;tags&quot;:null},&quot;region&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_region&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.region&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeRegion&quot;,&quot;regionID&quot;:&quot;&quot;,&quot;name&quot;:&quot;AWS_US_WEST&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeRegion&quot;,&quot;regionID&quot;:&quot;us-east-1&quot;,&quot;name&quot;:&quot;AWS_US_EAST_1&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeRegion&quot;,&quot;regionID&quot;:&quot;eu-west-1&quot;,&quot;name&quot;:&quot;AWS_EU_WEST_1&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeRegion&quot;,&quot;regionID&quot;:&quot;eu-central-1&quot;,&quot;name&quot;:&quot;AWS_EU_CENTRAL_1&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeRegion&quot;,&quot;regionID&quot;:&quot;ap-southeast-2&quot;,&quot;name&quot;:&quot;AWS_AP_SOUTHEAST_2&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeRegion&quot;,&quot;regionID&quot;:&quot;east-us-2.azure&quot;,&quot;name&quot;:&quot;AZURE_EAST_US_2&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.snowflake.SnowflakeRegion&quot;,&quot;name&quot;:&quot;region&quot;,&quot;tags&quot;:null},&quot;userPassword&quot;:{&quot;useAuth&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useAuth&quot;,&quot;tags&quot;:null},&quot;userId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_userPassword_userId&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.userPassword.userId&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;userId&quot;,&quot;tags&quot;:null},&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;8pW6Nmy2kudRBeMMd1PGL586BD2Hy8psIB8oWNyrX1/g+RodsfaRXV0GfKhD+Igu&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.userPassword.password&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;needSwitch&quot;:false,&quot;name&quot;:&quot;userPassword&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;warehouse&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_warehouse&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.warehouse&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;warehouse&quot;,&quot;tags&quot;:null},&quot;db&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_db&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.db&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;db&quot;,&quot;tags&quot;:null},&quot;schemaName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_schemaName&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.schemaName&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;schemaName&quot;,&quot;tags&quot;:null},&quot;useCustomRegion&quot;:{&quot;@id&quot;:8,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.useCustomRegion&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useCustomRegion&quot;,&quot;tags&quot;:null},&quot;customRegionID&quot;:{&quot;@id&quot;:7,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;context.mysnowflakeconn_customRegionID&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.customRegionID&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;customRegionID&quot;,&quot;tags&quot;:null},&quot;role&quot;:{&quot;@id&quot;:6,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_role&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.role&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;role&quot;,&quot;tags&quot;:null},&quot;tracing&quot;:{&quot;@id&quot;:5,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;context.mysnowflakeconn_tracing&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;connection.tracing&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;OFF&quot;,&quot;name&quot;:&quot;OFF&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;SEVERE&quot;,&quot;name&quot;:&quot;SEVERE&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;WARNING&quot;,&quot;name&quot;:&quot;WARNING&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;INFO&quot;,&quot;name&quot;:&quot;INFO&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;CONFIG&quot;,&quot;name&quot;:&quot;CONFIG&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;FINE&quot;,&quot;name&quot;:&quot;FINE&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;FINER&quot;,&quot;name&quot;:&quot;FINER&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;FINEST&quot;,&quot;name&quot;:&quot;FINEST&quot;},{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties$Tracing&quot;,&quot;value&quot;:&quot;ALL&quot;,&quot;name&quot;:&quot;ALL&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionProperties.Tracing&quot;,&quot;name&quot;:&quot;tracing&quot;,&quot;tags&quot;:null},&quot;talendProductVersion&quot;:null,&quot;testConnection&quot;:{&quot;formtoShow&quot;:null,&quot;name&quot;:&quot;testConnection&quot;,&quot;tags&quot;:null},&quot;advanced&quot;:{&quot;formtoShow&quot;:{&quot;subtitle&quot;:null,&quot;properties&quot;:{&quot;@ref&quot;:4},&quot;widgetMap&quot;:{&quot;useCustomRegion&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:1,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:true,&quot;content&quot;:{&quot;@ref&quot;:8},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;customRegionID&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:1,&quot;order&quot;:2,&quot;hidden&quot;:true,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@ref&quot;:7},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;loginTimeout&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:2,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@ref&quot;:9},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;tracing&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:3,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.enumeration&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@ref&quot;:5},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;role&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:4,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@ref&quot;:6},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}}},&quot;cancelable&quot;:false,&quot;originalValues&quot;:null,&quot;callBeforeFormPresent&quot;:false,&quot;callAfterFormBack&quot;:false,&quot;callAfterFormNext&quot;:false,&quot;callAfterFormFinish&quot;:false,&quot;allowBack&quot;:false,&quot;allowForward&quot;:false,&quot;allowFinish&quot;:false,&quot;refreshUI&quot;:true,&quot;name&quot;:&quot;Advanced&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;advanced&quot;,&quot;tags&quot;:null},&quot;referencedComponent&quot;:{&quot;referenceType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;THIS_COMPONENT&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_TYPE&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties&lt;P extends org.talend.daikon.properties.Properties>.ReferenceType&quot;,&quot;name&quot;:&quot;referenceType&quot;,&quot;tags&quot;:null},&quot;componentInstanceId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;componentInstanceId&quot;,&quot;tags&quot;:null},&quot;referenceDefinitionName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;tSnowflakeConnection&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;referenceDefinitionName&quot;,&quot;tags&quot;:null},&quot;reference&quot;:null,&quot;name&quot;:&quot;referencedComponent&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:{&quot;@id&quot;:1,&quot;status&quot;:{&quot;name&quot;:&quot;OK&quot;},&quot;message&quot;:null,&quot;number&quot;:0},&quot;tags&quot;:null},&quot;table&quot;:{&quot;@id&quot;:2,&quot;@type&quot;:&quot;org.talend.components.snowflake.tsnowflakeoutput.TSnowflakeOutputProperties$TableSubclass&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:3},&quot;connection&quot;:{&quot;@ref&quot;:4},&quot;tableName&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;elt_tld_load\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;tableName&quot;,&quot;tags&quot;:null},&quot;schemaListener&quot;:{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeConnectionTableProperties$1&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:3}},&quot;main&quot;:{&quot;@type&quot;:&quot;org.talend.components.snowflake.SnowflakeTableProperties$1&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:2},&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;snow_out\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;Name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;Name\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;Name\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;address\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;address\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;address\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;city\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;city\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;city\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;pin\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;pin\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;pin\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;age\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;age\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;age\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;salary\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;salary\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;salary\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;Etl_date\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;etl_date\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;Etl_date\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;}],\&quot;di.table.name\&quot;:\&quot;snow_out\&quot;,\&quot;di.table.label\&quot;:\&quot;snow_out\&quot;}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;main&quot;,&quot;validationResult&quot;:{&quot;@ref&quot;:1},&quot;tags&quot;:null},&quot;name&quot;:&quot;table&quot;,&quot;validationResult&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.ValidationResultMutable&quot;,&quot;status&quot;:{&quot;name&quot;:&quot;ERROR&quot;},&quot;message&quot;:&quot;java.lang.IllegalArgumentException: Missing account&quot;,&quot;number&quot;:0},&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:{&quot;@ref&quot;:1},&quot;tags&quot;:null}"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="address"/>
+      </column>
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="city"/>
+      </column>
+      <column comment="" key="false" length="-1" name="pin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="pin"/>
+      </column>
+      <column comment="" key="false" length="-1" name="age" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="age"/>
+      </column>
+      <column comment="" key="false" length="-1" name="salary" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="salary"/>
+      </column>
+      <column comment="" key="false" length="-1" name="Etl_date" nullable="true" originalDbColumnName="etl_date" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Etl_date"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="255" name="columnName" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="columnName"/>
+      </column>
+      <column comment="" key="false" length="255" name="rowNumber" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="rowNumber"/>
+      </column>
+      <column comment="" key="false" length="255" name="category" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="category"/>
+      </column>
+      <column comment="" key="false" length="255" name="character" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="character"/>
+      </column>
+      <column comment="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="errorMessage"/>
+      </column>
+      <column comment="" key="false" length="255" name="byteOffset" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="byteOffset"/>
+      </column>
+      <column comment="" key="false" length="255" name="line" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="line"/>
+      </column>
+      <column comment="" key="false" length="255" name="sqlState" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="sqlState"/>
+      </column>
+      <column comment="" key="false" length="255" name="code" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="code"/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tContextLoad_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFileInputDelimited_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="snow_out" lineStyle="0" metaname="snow_out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="snow_out" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Make_snowflake_connection"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="30;144;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

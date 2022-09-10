@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_LyWtgHsZEeyfSZ6c5ELc-Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_LyWtgXsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_tracing" prompt="Snowflake_db_tracing?" promptNeeded="false" type="id_String" value="OFF"/>
+  <contextParameter xmi:id="_LyWtgnsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_region" prompt="Snowflake_db_region?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWtg3sZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_userPassword_userId" prompt="Snowflake_db_userPassword_userId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWthHsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_customRegionID" prompt="Snowflake_db_customRegionID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWthXsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_role" prompt="Snowflake_db_role?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWthnsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_schemaName" prompt="Snowflake_db_schemaName?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWth3sZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_userPassword_password" prompt="Snowflake_db_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_LyWtiHsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_db" prompt="Snowflake_db_db?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWtiXsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_account" prompt="Snowflake_db_account?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWtinsZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_warehouse" prompt="Snowflake_db_warehouse?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_LyWti3sZEeyfSZ6c5ELc-Q" comment="" name="Snowflake_db_loginTimeout" prompt="Snowflake_db_loginTimeout?" promptNeeded="false" type="id_Integer" value=""/>
+</talendfile:ContextType>

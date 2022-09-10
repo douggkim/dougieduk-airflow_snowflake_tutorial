@@ -1,0 +1,24 @@
+[2022-09-08T05:27:41.833+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: First_job.call_my_name scheduled__2022-05-05T00:00:00+00:00 [queued]>
+[2022-09-08T05:27:41.889+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: First_job.call_my_name scheduled__2022-05-05T00:00:00+00:00 [queued]>
+[2022-09-08T05:27:41.894+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-08T05:27:41.895+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2022-09-08T05:27:41.896+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-08T05:27:42.006+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): call_my_name> on 2022-05-05 00:00:00+00:00
+[2022-09-08T05:27:42.032+0000] {standard_task_runner.py:52} INFO - Started process 920 to run task
+[2022-09-08T05:27:42.059+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'First_job', 'call_my_name', 'scheduled__2022-05-05T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/1_Firstjob.py', '--cfg-path', '/tmp/tmp_xu9lz30', '--error-file', '/tmp/tmpunj5r0ha']
+[2022-09-08T05:27:42.064+0000] {standard_task_runner.py:80} INFO - Job 15: Subtask call_my_name
+[2022-09-08T05:27:42.301+0000] {task_command.py:371} INFO - Running <TaskInstance: First_job.call_my_name scheduled__2022-05-05T00:00:00+00:00 [running]> on host 1e016d6af7c5
+[2022-09-08T05:27:42.582+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=snowadmin
+AIRFLOW_CTX_DAG_ID=First_job
+AIRFLOW_CTX_TASK_ID=call_my_name
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-05T00:00:00+00:00
+[2022-09-08T05:27:42.589+0000] {logging_mixin.py:115} INFO - Hi my name is :Python
+[2022-09-08T05:27:42.594+0000] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-08T05:27:42.724+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=First_job, task_id=call_my_name, execution_date=20220505T000000, start_date=20220908T052741, end_date=20220908T052742
+[2022-09-08T05:27:42.821+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-08T05:27:42.965+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

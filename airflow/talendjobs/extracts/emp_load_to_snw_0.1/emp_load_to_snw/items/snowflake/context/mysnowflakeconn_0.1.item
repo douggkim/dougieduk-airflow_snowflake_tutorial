@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_0QP9oIRNEeuBO4cuX3O_9Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_0QP9oYRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_warehouse" prompt="mysnowflakeconn_warehouse?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9ooRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_schemaName" prompt="mysnowflakeconn_schemaName?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9o4RNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_userPassword_userId" prompt="mysnowflakeconn_userPassword_userId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9pIRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_customRegionID" prompt="mysnowflakeconn_customRegionID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9pYRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_db" prompt="mysnowflakeconn_db?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9poRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_account" prompt="mysnowflakeconn_account?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9p4RNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_region" prompt="mysnowflakeconn_region?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9qIRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_userPassword_password" prompt="mysnowflakeconn_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_0QP9qYRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_tracing" prompt="mysnowflakeconn_tracing?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0QP9qoRNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_loginTimeout" prompt="mysnowflakeconn_loginTimeout?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_0QP9q4RNEeuBO4cuX3O_9Q" comment="" name="mysnowflakeconn_role" prompt="mysnowflakeconn_role?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

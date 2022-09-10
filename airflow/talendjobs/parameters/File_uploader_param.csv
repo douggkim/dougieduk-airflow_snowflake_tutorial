@@ -1,0 +1,3 @@
+DATABASE,SCHEMA,LOCAL_FILE_PATH,TABLE_NAME,WAREHOUSE,FILE_FORMAT
+DEMO_DB,PUBLIC,/opt/airflow/snowpythconn/apps/data/employee_1.csv,EMP_PYTHON,DATA_LOAD,MY_CSV_S3_FORMAT
+DEMO_DB,PUBLIC,/opt/airflow/snowpythconn/apps/data/employee_2.csv,EMP_PYTHON,DATA_LOAD,MY_CSV_S3_FORMAT

@@ -1,0 +1,6 @@
+DATABASE,SCHEMA,TABLE_NAME,S3_BUCKET,STAGE_OBJECT,S3_FILE_PATH,WAREHOUSE,FILE_FORMAT,PATTERN,REJECTS_THRESHOLD,DATA_SOURCE
+DEMO_DB,PUBLIC,stg_emp_details_parquet,snowflakesmpdata,MY_S3_STAGE/,parquet_folder/,DATA_LOAD,my_parquet_s3_format,.*,10,PARQUET
+DEMO_DB,PUBLIC,stg_emp_details_avro,snowflakesmpdata,MY_S3_STAGE/,Avro_folder/,DATA_LOAD,my_avro_s3_format,.*,10,AVRO
+DEMO_DB,PUBLIC,stg_emp_details_orc,snowflakesmpdata,MY_S3_STAGE/,orc_folder/,DATA_LOAD,my_orc_s3_format,.*,10,ORC
+DEMO_DB,PUBLIC,stg_emp_details_json,snowflakesmpdata,MY_S3_STAGE/,json_folder/,DATA_LOAD,my_json_s3_format,.*,10,JSON
+DEMO_DB,PUBLIC,stg_emp_details_csv,snowflakesmpdata,MY_S3_STAGE/,csv_folder/,DATA_LOAD,my_csv_s3_format,.*,10,CSV
