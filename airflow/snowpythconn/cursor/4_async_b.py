@@ -12,7 +12,7 @@ conn = snowcnt.return_conn_obj()
 
 
 # Submit an asynchronous query for execution.
-cur.execute_async('select count(*) from table(generator(timeLimit => 120))')
+cur.execute_async('select count(*) from table(generator(timeLimit => 30))')
 
 # Get the query ID for the asynchronous query.
 query_id = cur.sfqid
@@ -50,6 +50,12 @@ try:
 except ProgrammingError as err:
   print('Programming Error: {0}'.format(err))
 
+
+  query_id = cur.sfqid
+  if conn.is_an_error(conn.get_query_status(query_id)):
+    raise Exception("Sorry something went wrong")
+  else:
+    print('All good')
 
   query_id = cur.sfqid
   if conn.is_an_error(conn.get_query_status(query_id)):

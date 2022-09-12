@@ -22,4 +22,6 @@ stmt2 = "insert into PUBLIC.BATCH_INSERT (A, B) values (?, ?)"
 cur.executemany(stmt2, sequence_of_parameters1)
 cur.executemany(stmt2, sequence_of_parameters2)
 
+print(cur.description())
+
 cur.close()

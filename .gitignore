@@ -8,3 +8,4 @@ airflow/snowpythconn/Sql_files/snowflake_config.cfg
 airflow/logs/**
 airflow/logs/**/*
 *.cfg
+./logs/**
