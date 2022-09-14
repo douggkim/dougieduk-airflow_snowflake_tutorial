@@ -200,4 +200,4 @@ def collect_rejects(collect_rej, cur):
 
     cur.close()
 
-#execute_copy_cmd()
+execute_copy_cmd()

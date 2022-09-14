@@ -29,7 +29,7 @@ def execute_elt_queries():
     i=0
 
     csvreader=pd.read_csv('/opt/airflow/snowpythconn/Sql_files/emp_process.sql',
-    engine='python',delimiter='\n',header=None,sep=';')
+    engine='python',header=None,sep=';')
 
     for index,row in csvreader.iterrows():
         print(row[0])

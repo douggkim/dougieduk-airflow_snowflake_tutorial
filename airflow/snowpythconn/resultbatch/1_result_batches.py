@@ -11,8 +11,8 @@ conn = snowcnt.return_conn_obj()
 #Resultset
 
 # Execute a query.
-#cur.execute('select seq4() as n from table(generator(rowcount => 1000000));')
-cur.execute('SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF100.CUSTOMER;')
+cur.execute('select seq4() as n from table(generator(rowcount => 1000000));')
+# cur.execute('SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF100.CUSTOMER;')
 
 # Get the list of result batches
 result_batch_list = cur.get_result_batches()

@@ -33,3 +33,4 @@ status=conn.get_query_status(query_id).name
 
 print(status)
 type(status)
+ 

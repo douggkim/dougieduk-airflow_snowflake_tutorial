@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import sys
+import snowflake.connector
 sys.path.append('/opt/airflow/snowpythconn/')
 from lib2to3.pgen2 import parse
 from pickle import FALSE, TRUE
-import snowflake.connector
 import creds.read_hardcoded_paths as paths
 
 cred = paths.snow_creds()
@@ -16,7 +16,7 @@ def connect_snowflake():
     user=cred["userid"],
     password=cred["password"],
     account=cred["account"],
-    #autocommit=False
+    # autocommit=False
     )
     cs = ctx.cursor()
     return cs
@@ -29,6 +29,6 @@ def return_conn_obj():
     account=cred["account"],
     database='DEMO_DB',
     schema='PUBLIC'
-    #autocommit=FALSE
+    # autocommit=False
     )
     return ctx

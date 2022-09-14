@@ -52,6 +52,7 @@ def execute_copy_cmd():
             FILE_FORMAT = {file_format} PATTERN = '{pattern}' ON_ERROR=CONTINUE"""
 
             cur.execute(copy_command)
+            print("Command Executed")
 
         except connector.errors.ProgrammingError as e:
             # default error message

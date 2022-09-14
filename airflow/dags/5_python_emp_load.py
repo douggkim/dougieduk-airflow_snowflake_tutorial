@@ -45,7 +45,7 @@ default_args = {
 }
 
 # DAG for airflow task
-dag = DAG(JOB_NAME, default_args=default_args, schedule_interval=None, 
+dag = DAG(JOB_NAME, default_args=default_args, schedule_interval='@daily', 
 description='Section : Snowflake python ELT. Lecture : Schedule airflow job : For python code.')
 
 # t1, t2, t3, etc are tasks created by instantiating operators
